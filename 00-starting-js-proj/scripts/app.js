@@ -42,3 +42,9 @@ const greeting1 = createGreeting("Anish", "shukla");
 console.log(greeting1);
 const greeting2 = createGreeting("Ravi", "Hello, what's up?");
 console.log(greeting2);
+
+// Arrow fuction
+export default (userName, message) => {
+  console.log("hello");
+  return userName + message;
+};
