@@ -48,3 +48,27 @@ export default (userName, message) => {
   console.log("hello");
   return userName + message;
 };
+
+// (userName)=>{anihs} instead of this
+// userName=>{anihs} you could write this
+
+// userName,userAge=>{ansih} not omit paranthesis
+// (userName, userAge) => {anihs} omit paranthesis
+
+// Instead of
+// number => {
+//   return number * 3;
+// }
+
+// you could write
+// number => number * 3;
+
+// The following code would be invalid:
+// number => return number * 3; // invalid because return keyword must also be omitted!
+// number => if (number === 2) { return 5 }; // invalid because if statements can't be returned
+
+// invalid code:
+// number => { age: number }; trying to return an object
+
+// the code would need to be adjusted like this:
+// number => ({ age: number });  wrapping the object in extra parentheses
