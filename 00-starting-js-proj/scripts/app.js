@@ -31,9 +31,14 @@
 // }
 // greet();
 
-function greetUser(userName, meassage = "10") {
-  console.log(userName);
-  console.log(meassage);
+function createGreeting(userName, meassage) {
+  // console.log(userName);
+  // console.log(meassage);
+  return "Hi, I am " + userName + " " + meassage;
 }
-greetUser("Shukla");
-greetUser("Ravi", "Shukla");
+// greetUser("Shukla");
+// greetUser("Ravi", "Shukla");
+const greeting1 = createGreeting("Anish", "shukla");
+console.log(greeting1);
+const greeting2 = createGreeting("Ravi", "Hello, what's up?");
+console.log(greeting2);
