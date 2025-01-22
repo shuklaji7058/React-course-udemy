@@ -6,6 +6,8 @@
 
 // import { xyz } from "./util.js";
 // console.log(xyz);
+
+//let
 let userMeassage = "Anish Shukla";
 console.log(userMeassage);
 console.log(userMeassage);
@@ -14,3 +16,10 @@ console.log(userMeassage);
 let clientMeassage = "Ravi Shukla";
 console.log(clientMeassage);
 console.log(clientMeassage);
+
+//operators
+
+// console.log(10===5);
+if (10 === 10) {
+  console.log("works");
+}
