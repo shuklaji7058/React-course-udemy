@@ -113,3 +113,10 @@ console.log(index);
 
 const editWatching = watching.map((item) => item + "!");
 console.log(editWatching);
+
+//Desctructuring
+// const [firstName, lastName] = ["Anish", "Shukla"];
+
+// // const firstName = userNameData[0];
+// // const lastName = userNameData[1];
+// console.log(firstName, lastName);
