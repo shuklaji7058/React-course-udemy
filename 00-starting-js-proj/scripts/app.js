@@ -74,29 +74,42 @@ export default (userName, message) => {
 // number => ({ age: number });  wrapping the object in extra parentheses
 
 //Object & classes
-const person = {
-  name: "Anish",
-  age: 21,
-  number: 123456789,
-  greet() {
-    console.log("Hello");
-    console.log(this.name);
-  },
-};
-console.log(person.number);
-person.greet();
+// const person = {
+//   name: "Anish",
+//   age: 21,
+//   number: 123456789,
+//   greet() {
+//     console.log("Hello");
+//     console.log(this.name);
+//   },
+// };
+// console.log(person.number);
+// person.greet();
 
-//Blueprint
-class Person {
-  constructor(name, age) {
-    this.name = name;
-    this.age = age;
-  }
+// //Blueprint
+// class Person {
+//   constructor(name, age) {
+//     this.name = name;
+//     this.age = age;
+//   }
 
-  greet() {
-    console.log("Hi!");
-  }
-}
-const person1 = new Person("ANISH", 21);
-console.log(person1);
-person1.greet();
+//   greet() {
+//     console.log("Hi!");
+//   }
+// }
+// const person1 = new Person("ANISH", 21);
+// console.log(person1);
+// person1.greet();
+
+//Arrays
+const watching = ["Cricket", "Football", "Kabbadi"];
+console.log(watching[1]);
+
+watching.push("Hockey");
+console.log(watching);
+
+const index = watching.findIndex((item) => item === "Cricket");
+console.log(index);
+
+const editWatching = watching.map((item) => item + "!");
+console.log(editWatching);
