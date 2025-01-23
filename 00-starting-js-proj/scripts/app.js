@@ -85,3 +85,18 @@ const person = {
 };
 console.log(person.number);
 person.greet();
+
+//Blueprint
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  greet() {
+    console.log("Hi!");
+  }
+}
+const person1 = new Person("ANISH", 21);
+console.log(person1);
+person1.greet();
