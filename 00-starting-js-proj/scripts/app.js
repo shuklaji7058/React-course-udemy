@@ -72,3 +72,16 @@ export default (userName, message) => {
 
 // the code would need to be adjusted like this:
 // number => ({ age: number });  wrapping the object in extra parentheses
+
+//Object & classes
+const person = {
+  name: "Anish",
+  age: 21,
+  number: 123456789,
+  greet() {
+    console.log("Hello");
+    console.log(this.name);
+  },
+};
+console.log(person.number);
+person.greet();
