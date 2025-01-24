@@ -127,3 +127,18 @@ console.log(editWatching);
 // console.log(userName, age);
 
 //Spread operator
+const hobbies = ["Learning", "Playing"];
+const user = {
+  name: "Anish",
+  age: 21,
+};
+
+const newHobies = ["Reading"];
+const mergedHobbies = [...hobbies, ...newHobies];
+console.log(mergedHobbies);
+
+const extendedUser = {
+  isAdmin: true,
+  ...user,
+};
+console.log(extendedUser);
