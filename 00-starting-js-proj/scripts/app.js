@@ -157,3 +157,6 @@ const password = ["Anish", "anish"];
 for (const pass of password) {
   console.log(pass);
 }
+
+// const list = document.querySelector("ul");
+// list.remove();
