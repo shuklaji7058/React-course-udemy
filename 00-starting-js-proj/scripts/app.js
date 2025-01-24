@@ -142,3 +142,13 @@ const extendedUser = {
   ...user,
 };
 console.log(extendedUser);
+
+// control structure
+const password = prompt("Enter passsword");
+if (password === "Anish") {
+  console.log("Granted");
+} else if (password === "anish") {
+  console.log("Granted");
+} else {
+  console.log("Not Granted");
+}
