@@ -144,19 +144,32 @@ const extendedUser = {
 console.log(extendedUser);
 
 // control structure
-const Password = prompt("Enter passsword");
-if (Password === "Anish") {
-  console.log("Granted");
-} else if (Password === "anish") {
-  console.log("Granted");
-} else {
-  console.log("Not Granted");
-}
+// const Password = prompt("Enter passsword");
+// if (Password === "Anish") {
+//   console.log("Granted");
+// } else if (Password === "anish") {
+//   console.log("Granted");
+// } else {
+//   console.log("Not Granted");
+// }
 
-const password = ["Anish", "anish"];
-for (const pass of password) {
-  console.log(pass);
-}
+// const password = ["Anish", "anish"];
+// for (const pass of password) {
+//   console.log(pass);
+// }
 
 // const list = document.querySelector("ul");
 // list.remove();
+
+//Using a function as a value
+function handleTimeout() {
+  console.log("Timeout!");
+}
+const handleTimeout2 = () => {
+  console.log("Timeout..again!");
+};
+setTimeout(handleTimeout, 2000);
+setTimeout(handleTimeout2, 2500);
+setTimeout(() => {
+  console.log("More time out..");
+}, 3000);
