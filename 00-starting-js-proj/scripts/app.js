@@ -133,7 +133,7 @@ const user = {
   age: 21,
 };
 
-const newHobies = ["Reading"];
+let newHobies = ["Reading"];
 const mergedHobbies = [...hobbies, ...newHobies];
 console.log(mergedHobbies);
 
@@ -144,11 +144,16 @@ const extendedUser = {
 console.log(extendedUser);
 
 // control structure
-const password = prompt("Enter passsword");
-if (password === "Anish") {
+const Password = prompt("Enter passsword");
+if (Password === "Anish") {
   console.log("Granted");
-} else if (password === "anish") {
+} else if (Password === "anish") {
   console.log("Granted");
 } else {
   console.log("Not Granted");
+}
+
+const password = ["Anish", "anish"];
+for (const pass of password) {
+  console.log(pass);
 }
