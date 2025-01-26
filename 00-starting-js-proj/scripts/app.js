@@ -202,3 +202,7 @@ const array2 = ["e", "f", "g", "h"];
 const array3 = array1.concat(array2);
 console.log(array3);
 // Expected output: Array ["a", "b", "c", "d", "e", "f"]
+
+const month = ["Jan", "Feb", "Mar", "April", "May"];
+month.splice(2, 0, "May");
+console.log(month);
