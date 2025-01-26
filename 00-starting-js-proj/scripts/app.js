@@ -1,7 +1,7 @@
-import * as util from "./util.js";
-import { apiKey, abc as content } from "./util.js";
-console.log(apiKey, content);
-console.log(util.xyz);
+// import * as util from "./util.js";
+// import { apiKey, abc as content } from "./util.js";
+// console.log(apiKey, content);
+// console.log(util.xyz);
 
 // import { xyz } from "./util.js";
 // console.log(xyz);
