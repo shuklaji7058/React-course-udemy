@@ -193,9 +193,9 @@ const words = [2, 4, 7, 9, 14, 11];
 const result = words.findIndex((word) => word > 12);
 console.log(result);
 
-const error = [2, 4, 7, 9, 19, 11];
-const find = error.find((element) => element > 10);
-console.log(find);
+//const error = [2, 4, 7, 9, 19, 11];
+//const find = error.find((element) => element > 10);
+//console.log(find);
 //output:19
 
 const array1 = ["a", "b", "c", "d"];
