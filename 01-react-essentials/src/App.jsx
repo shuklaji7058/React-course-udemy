@@ -21,7 +21,6 @@ function Header() {
     </header>
   );
 }
-
 function CoreConcept(props) {
   return (
     <li>
