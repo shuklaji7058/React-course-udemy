@@ -1,9 +1,9 @@
 // export default function TabButton({ label }) { this also works
-export default function TabButton({ children }) {
+export default function TabButton(props) {
   return (
     <li>
       {/* <button>{label}</button>//... this also works */}
-      <button>{children}</button>
+      <button>{props.children}</button>
     </li>
   );
 }
