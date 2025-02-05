@@ -5,6 +5,7 @@ import { CORE_CONCEPTS } from "./data";
 
 function App() {
   function handleClick(selectedButton) {
+    //for event handling
     console.log(selectedButton);
   }
   return (
