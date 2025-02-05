@@ -4,10 +4,15 @@ import TabButton from "./components/TabButton.jsx";
 import { CORE_CONCEPTS } from "./data";
 
 function App() {
+  let tabContent = "Please click a button";
+
   function handleClick(selectedButton) {
     //for event handling
-    console.log(selectedButton);
+    tabContent = selectedButton;
+    console.log(tabContent);
   }
+  console.log("asdfghjgfdsad");
+
   return (
     <div>
       <Header />
@@ -29,7 +34,7 @@ function App() {
           <h2>Examples</h2>
           <menu>
             <TabButton onSelect={() => handleClick("components")}>
-              Components
+              COMPONENTS
             </TabButton>
             {/* <TabButton label="Components"></TabButton> */}
             <TabButton
@@ -43,7 +48,7 @@ function App() {
             <TabButton onSelect={() => handleClick("props")}>PROPS</TabButton>
             <TabButton onSelect={() => handleClick("state")}>STATE</TabButton>
           </menu>
-          Dynamic content
+          tabContent
         </section>
       </main>
     </div>
