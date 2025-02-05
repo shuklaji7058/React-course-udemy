@@ -32,9 +32,16 @@ function App() {
               Components
             </TabButton>
             {/* <TabButton label="Components"></TabButton> */}
-            <TabButton onSelect={() => handleClick("jsx")}>JSX</TabButton>
-            <TabButton onSelect={() => handleClick("props")}>Props</TabButton>
-            <TabButton onSelect={() => handleClick("state")}>State</TabButton>
+            <TabButton
+              onSelect={function () {
+                //withuout arrow function
+                handleClick("jsx");
+              }}
+            >
+              JSX
+            </TabButton>
+            <TabButton onSelect={() => handleClick("props")}>PROPS</TabButton>
+            <TabButton onSelect={() => handleClick("state")}>STATE</TabButton>
           </menu>
           Dynamic content
         </section>
