@@ -11,7 +11,7 @@ export default function App() {
     setSelectedTopic(selectedButton);
     // console.log(tabContent);
   }
-  console.log("App component executing");
+  // console.log("App component executing");
 
   let tabContent = <p>Please select a topic.</p>;
 
