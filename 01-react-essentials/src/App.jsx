@@ -47,11 +47,15 @@ export default function App() {
         <section id="examples">
           <h2>Examples</h2>
           <menu>
-            <TabButton onSelect={() => handleClick("state")}>
+            <TabButton
+              isSelected={selectedTopic === "components"}
+              onSelect={() => handleClick("components")}
+            >
               COMPONENTS
             </TabButton>
             {/* <TabButton label="Components"></TabButton> */}
             <TabButton
+              isSelected={selectedTopic === "jsx"}
               onSelect={function () {
                 //withuout arrow function
                 handleClick("jsx");
@@ -59,8 +63,18 @@ export default function App() {
             >
               JSX
             </TabButton>
-            <TabButton onSelect={() => handleClick("props")}>Props</TabButton>
-            <TabButton onSelect={() => handleClick("state")}>State</TabButton>
+            <TabButton
+              isSelected={selectedTopic === "props"}
+              onSelect={() => handleClick("props")}
+            >
+              Props
+            </TabButton>
+            <TabButton
+              isSelected={selectedTopic === "state"}
+              onSelect={() => handleClick("state")}
+            >
+              State
+            </TabButton>
           </menu>
           {tabContent}
         </section>
