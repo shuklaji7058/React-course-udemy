@@ -13,7 +13,7 @@ export default function App() {
   }
   console.log("App component executing");
 
-  let tabContent = <p>Please select a topic.</p>;
+  let tabContent = <p>Please select topic.</p>;
 
   if (selectedTopic) {
     tabContent = (
