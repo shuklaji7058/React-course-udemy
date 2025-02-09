@@ -46,7 +46,7 @@ export default function App() {
               isSelected={selectedTopic === "components"}
               onSelect={() => handleClick("components")}
             >
-              COMPONENT
+              COMPONENTS
             </TabButton>
             {/* <TabButton label="Components"></TabButton> */}
             <TabButton
