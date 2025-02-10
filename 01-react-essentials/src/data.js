@@ -26,7 +26,7 @@ export const CORE_CONCEPTS = [
     image: stateImg,
     title: "State",
     description:
-      "React-managed data which, when changed, causes the component to re-render & the UI to update.",
+      "React-managed data which, when changed, causes the components to re-render & the UI to update.",
   },
 ];
 
