@@ -1,19 +1,22 @@
 import { useState } from "react";
+
 import CoreConcept from "./components/CoreConcept.jsx";
 import Header from "./components/Header/Header.jsx";
 import TabButton from "./components/TabButton.jsx";
-import { CORE_CONCEPTS, EXAMPLES } from "./data";
+import { CORE_CONCEPTS, EXAMPLES } from "./data.js";
 
-export default function App() {
+function App() {
   const [selectedTopic, setSelectedTopic] = useState();
-  function handleClick(selectedButton) {
-    //for event handling
-    setSelectedTopic(selectedButton);
-    // console.log(tabContent);
-  }
-  console.log("App component executing");
 
-  let tabContent = <p>Please select topic.</p>;
+  function handleSelect(selectedButton) {
+    // selectedButton => 'components', 'jsx', 'props', 'state'
+    setSelectedTopic(selectedButton);
+    // console.log(selectedTopic);
+  }
+
+  console.log("APP COMPONENT EXECUTING");
+
+  let tabContent = <p>Please select a topic.</p>;
 
   if (selectedTopic) {
     tabContent = (
@@ -32,7 +35,7 @@ export default function App() {
       <Header />
       <main>
         <section id="core-concepts">
-          <h2>Core Concept</h2>
+          <h2>Core Concepts</h2>
           <ul>
             {CORE_CONCEPTS.map((conceptItem) => (
               <CoreConcept key={conceptItem.title} {...conceptItem} />
@@ -44,29 +47,25 @@ export default function App() {
           <menu>
             <TabButton
               isSelected={selectedTopic === "components"}
-              onSelect={() => handleClick("components")}
+              onSelect={() => handleSelect("components")}
             >
-              COMPONENTS
+              Components
             </TabButton>
-            {/* <TabButton label="Components"></TabButton> */}
             <TabButton
               isSelected={selectedTopic === "jsx"}
-              onSelect={function () {
-                //withuout arrow function
-                handleClick("jsx");
-              }}
+              onSelect={() => handleSelect("jsx")}
             >
               JSX
             </TabButton>
             <TabButton
               isSelected={selectedTopic === "props"}
-              onSelect={() => handleClick("props")}
+              onSelect={() => handleSelect("props")}
             >
               Props
             </TabButton>
             <TabButton
               isSelected={selectedTopic === "state"}
-              onSelect={() => handleClick("state")}
+              onSelect={() => handleSelect("state")}
             >
               State
             </TabButton>
@@ -77,3 +76,5 @@ export default function App() {
     </div>
   );
 }
+
+export default App;
